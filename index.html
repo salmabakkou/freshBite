@@ -8,13 +8,38 @@
 </head>
 <body>
     <nav>
-        <img src="imgFreshBite/logo.png" alt="logo">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="nav-items">
+            <img src="imgFreshBite/logo.png" alt="logo">
+            
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+                <li class="hideOnMobile"><a href="galerie.html">Galerie</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-icone">
+            <img src="imgFreshBite/panier.png" class="hideOnMobile">
+            <img src="imgFreshBite/chercher.png" class="hideOnMobile"> 
+            <img class="menuBtn" src="imgFreshBite/burger-bar.png" alt="" onclick="showSidebar()">    
+        </div>
+        
+        <ul class="sidebar">
+                <li ><img src="imgFreshBite/x.png" alt="X" onclick="hideSidebar()"></li>
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="menu.html">Menu</a></li>
+                <li ><a href="galerie.html">Galerie</a></li>
+                <li ><a href="contact.html">Contact</a></li>       
         </ul>
     </nav>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

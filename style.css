@@ -164,8 +164,17 @@ footer {
 }
 
 .titlepage{
+    font-family: "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: center;
+    align-items: center;
+    color: #2b5122;
+}
+.subtitle{
+    font-family: "Playfair Display", serif;
+    font-weight:500;
+    font-style: italic;
     text-align: center;
     align-items: center;
     color: #2b5122;
@@ -176,7 +185,7 @@ footer {
     grid-gap: 15px;
     row-gap: 25px;
     justify-content: center;
-    padding: 60px 60px; 
+    padding: 40px 60px; 
     width: 100%;
     box-sizing: border-box;
 }
@@ -191,6 +200,9 @@ footer {
     justify-content: flex-start;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(137, 127, 82);
+}
+.card:hover{
+    transform: scale(1.08);
 }
 .card img{
     border-radius: 50%;
@@ -224,11 +236,71 @@ footer {
     display: flex;
    justify-content: space-between;
 }
+.restaurantgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; 
+    width: 100%;                                                    
+    margin: 0;
+    padding: 40px 0 40px 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.restaurantgrid img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+    box-shadow: 5px 5px 10px rgba(137, 127, 82);
+}
+.restaurantgrid img:hover{
+    transform: scale(0.8);
+}
+.platgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    width: 100%;                                                    
+    margin: 0;
+    padding: 40px 0 40px 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.platgalerie{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.platgalerie p{
+    width: 400px;
+    text-align: center;
+    color: #897f52;
+}
+.platgalerie img {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+    box-shadow: 5px 5px 10px rgba(137, 127, 82);
+}
+.platgalerie img:hover{
+    transform: scale(1.07);
+}
 hr {
-  border-top: 1px solid #897f52; /* Épaisseur, style et couleur de la ligne */
-  border-bottom: none;      /* Supprime la bordure du bas par défaut */
-  width: 600px;               /* Ajuste la largeur de la ligne */
-  margin: 5px auto;        /* Centre la ligne */
+  border-top: 1px solid #897f52; 
+  border-bottom: none;     
+  width: 600px;     
+  margin: 5px auto;  
 }
 @media(max-width:800px){
     .hideOnMobile{

@@ -21,9 +21,24 @@ nav{
 .nav-items{
     display: flex;
 }
-.nav-icone{
-    display: flex;
-    gap: 12px;
+.navbtn {
+    background-color: #79af3d; 
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(137, 127, 82); 
+
+}
+
+.navbtn:hover {
+    background-color: #2b5122; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(137, 127, 82);
 }
 .nav-icone img{
     width: 24px;
@@ -80,89 +95,149 @@ nav img{
     display: none;
 }
 
+
 footer {
-  width: 100%;
-  height: 260px;
-  background-color: #eeebdf;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+    width: 100%;
+    background-color: #eeebdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 10px 20px; 
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
+
 
 .footerElement {
-  display: flex;
-  gap: 100px;
-  width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 40px; 
+    max-width: 1200px;
+    margin-bottom: 20px;
 }
+
 
 .footerElement img {
-  padding-top: 20px;
-  width: 100px;
-  height: 100px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
+
 
 .footerElement h2 {
-  color: #79af3d;
-  margin-bottom: 10px;
+    color: #2b5122;
+    margin: 0 0 6px 0; 
+    font-size: 18px;
+    text-align: center;
 }
 
+
+.footerElement p, .footerElement li h6 {
+    color: #897f52;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
 
 
 .footerElement ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
+
+.footerElement .adress,
+.footerElement .time,
+.footerElement .reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+
+.footerElement .time p {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
 .reservation .phone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .reservation .phone i {
-  font-size: 22px;
-  color: #79af3d;
+    font-size: 20px;
+    color: #79af3d;
+}
+.reservation .phone h6 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #897f52;
+    font-family: 'Playfair Display', serif;
 }
 
-.socialMedia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-}
 
 .socialMedia .icons {
-  display: flex;
-  gap: 15px;
-  
+    display: flex;
+    gap: 15px;
 }
 
 .socialMedia a {
-  color: #79af3d;
-  font-size: 22px;
-  transition: all 0.3s ease;
+    color: #79af3d;
+    font-size: 20px;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .socialMedia a:hover {
-  color: #2b5122;
-  transform: scale(1.2);
+    color: #2b5122;
+    transform: scale(1.2);
 }
+
 
 .copyright {
-  background-color: #79af3d;
-  color: #e8e7e3;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 14px;
+    background-color: #79af3d;
+    color: #e8e7e3;
+    text-align: center;
+    padding: 8px 20px; 
+    font-size: 14px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
 }
 
+
+@media(max-width: 900px){
+    .footerElement {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footerElement img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .time p {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
 .titlepage{
     font-family: "Playfair Display", serif;
     font-weight: 700;
